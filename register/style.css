@@ -13,9 +13,14 @@
 }
 
 
-input[type="text"]:focus {
+input:focus {
   outline-offset: -0.4vw;
   outline: 0.5vw var(--active-color) solid;
+}
+
+input::-webkit-calendar-picker-indicator{
+  position: absolute;
+  right: 0;
 }
 
 #body {
@@ -105,14 +110,14 @@ input[type="radio"] {
 }
 
 .small-label {
-  font-size: 2rem;
-  line-height: 5rem;
+  font-size: 3rem;
+  line-height: 6rem;
   width: 25%;
   text-align: center;
 }
 
 .small-box {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1rem;
   padding: 1rem;
   border: 0.3vw #ddd solid;
