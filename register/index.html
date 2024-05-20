@@ -9,12 +9,12 @@
 
 <body>
   <div id="body">
-    <h1 id="header">Register</h1>
-    <div id="form-box">
+    <h1 class="header">Register</h1>
+    <div class="main-container">
       <label for="nickname-box" id="nickname-label">Nickname</label>
       <input id="nickname-box" type="text" required>
 
-      <div id="status-box">
+      <div id="status-container">
         <label for="student-check" class="status-radio">
           <input type="radio" name="student-or-general" id="student-check" value="student" checked required>
           Student
@@ -48,6 +48,7 @@
       </div>
       <div id="enter-box"><input id="enter-button" type="button" value="Enter" onclick="location.href = '../top/index.html';"></div>
     </div>
+    <div class="main-container"><p id="small-description">所持金<span style="font-size: 3rem;padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p></div>
   </div>
   <script src="script.js"></script>
 </body>

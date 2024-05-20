@@ -1,5 +1,5 @@
 status_elements = document.getElementsByName("student-or-general");
-status_radio = document.getElementById("status-box");
+status_radio = document.getElementById("status-container");
 student_detail = document.getElementById("student-detail");
 
 status_radio.addEventListener("click",() => {changed_status()})
