@@ -16,7 +16,7 @@ function changed_status() {
     }
   });
   if (person_status == "student") {
-    student_detail.style.display = "block";
+    student_detail.style.display = "flex";
   } else {
     student_detail.style.display = "none";
   }

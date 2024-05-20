@@ -3,12 +3,19 @@
 * {
   padding: 0;
   margin: 0;
-  font-family:'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
+  user-select: none;
 }
 
 :root {
   --active-color: #ade1f6;
+}
+
+
+input[type="text"]:focus {
+  outline-offset: -0.4vw;
+  outline: 0.5vw var(--active-color) solid;
 }
 
 #body {
@@ -23,7 +30,7 @@
 
 #header {
   width: 80vw;
-  margin:5vw auto;
+  margin: 5vw auto;
   text-align: center;
   font-size: 6rem;
 }
@@ -31,10 +38,10 @@
 #form-box {
   display: flex;
   flex-direction: column;
-  padding:5vw;
-  width:80vw;
-  margin:0 auto;
-  border:0.3vw #ddd solid;
+  padding: 5vw;
+  width: 80vw;
+  margin: 0 auto;
+  border: 0.3vw #ddd solid;
   border-radius: 2vw;
   background-color: #eee;
 }
@@ -43,31 +50,30 @@
   font-size: 3rem;
   line-height: 3rem;
 }
+
 #nickname-box {
   font-size: 3rem;
   line-height: 3rem;
-  padding:1rem;
-  border:0.3vw #ddd solid;
+  padding: 1rem;
+  border: 0.3vw #ddd solid;
   border-radius: 2vw;
-  margin:2vw 0;
+  margin: 2vw 0;
   background-color: #fafafa;
 }
-#nickname-box:focus {
-  outline-offset: -0.4vw;
-  outline:0.5vw var(--active-color) solid;
-}
+
 
 #status-box {
   display: flex;
-  flex-direction:row;
-  margin:2vw 0;
-  border:0.3vw #ddd solid;
+  flex-direction: row;
+  margin: 2vw 0;
+  border: 0.3vw #ddd solid;
   border-radius: 2vw;
   overflow: hidden;
 }
+
 #status-box:focus {
   outline-offset: -0.3vw;
-  outline:0.6vw var(--active-color) solid;
+  outline: 0.6vw var(--active-color) solid;
 }
 
 
@@ -78,9 +84,11 @@
   text-align: center;
   transition: 0.1s;
 }
+
 .status-radio:has(input:checked) {
   background-color: var(--active-color);
 }
+
 .status-radio:has(input:not(checked)) {
   background-color: #fafafa;
 }
@@ -88,4 +96,28 @@
 
 input[type="radio"] {
   display: none;
+}
+
+#student-detail {
+  margin: 2vw 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.small-label {
+  font-size: 2rem;
+  line-height: 5rem;
+  width: 25%;
+  text-align: center;
+}
+
+.small-box {
+  font-size: 2rem;
+  line-height: 1rem;
+  padding: 1rem;
+  border: 0.3vw #ddd solid;
+  border-radius: 2vw;
+  background-color: #fafafa;
+  width: 25%;
+  text-align: center;
 }
