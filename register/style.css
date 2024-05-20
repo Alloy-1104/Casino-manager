@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family:'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --active-color: #ade1f6;
+}
+
+#body {
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+#header {
+  width: 80vw;
+  margin:5vw auto;
+  text-align: center;
+  font-size: 6rem;
+}
+
+#form-box {
+  display: flex;
+  flex-direction: column;
+  padding:5vw;
+  width:80vw;
+  margin:0 auto;
+  border:0.3vw #ddd solid;
+  border-radius: 2vw;
+  background-color: #eee;
+}
+
+#nickname-label {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+#nickname-box {
+  font-size: 3rem;
+  line-height: 3rem;
+  padding:1rem;
+  border:0.3vw #ddd solid;
+  border-radius: 2vw;
+  margin:2vw 0;
+  background-color: #fafafa;
+}
+#nickname-box:focus {
+  outline-offset: -0.4vw;
+  outline:0.5vw var(--active-color) solid;
+}
+
+#status-box {
+  display: flex;
+  flex-direction:row;
+  margin:2vw 0;
+  border:0.3vw #ddd solid;
+  border-radius: 2vw;
+  overflow: hidden;
+}
+#status-box:focus {
+  outline-offset: -0.3vw;
+  outline:0.6vw var(--active-color) solid;
+}
+
+
+.status-radio {
+  font-size: 3rem;
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+  transition: 0.1s;
+}
+.status-radio:has(input:checked) {
+  background-color: var(--active-color);
+}
+.status-radio:has(input:not(checked)) {
+  background-color: #fafafa;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
