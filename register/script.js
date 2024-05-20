@@ -4,10 +4,6 @@ student_detail = document.getElementById("student-detail");
 
 status_radio.addEventListener("click",() => {changed_status()})
 
-function get_status_value() {
-  
-}
-
 function changed_status() {
   person_status = ""
   status_elements.forEach(e => {
