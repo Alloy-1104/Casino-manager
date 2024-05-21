@@ -27,19 +27,19 @@
             General
           </label>
         </div>
-        <div class="sub-element" id="student-detail">
-          <label for="grade-box" id="grade-label" class="small-label">Grade</label>
-          <input id="grade-box" type="text" list="grades" inputmode="numeric" pattern="[1-3]" class="small-box"
-            required>
-          <datalist id="grades">
+        <div class="sub-element" id="form-student-detail">
+          <label for="form-input-grade" id="form-label-grade" class="form-label-student-detail">Grade</label>
+          <input id="form-input-grade" type="text" list="datalist-grade" inputmode="numeric" pattern="[1-3]"
+            class="form-input-student-detail" required>
+          <datalist id="datalist-grade">
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
           </datalist>
-          <label for="class-box" id="class-label" class="small-label">Class</label>
-          <input id="class-box" type="text" list="classes" inputmode="numeric" pattern="[1-8]" class="small-box"
-            required>
-          <datalist id="classes">
+          <label for="form-input-class" id="form-label-class" class="form-label-student-detail">Class</label>
+          <input id="form-input-class" type="text" list="datalist-class" inputmode="numeric" pattern="[1-8]"
+            class="form-input-student-detail" required>
+          <datalist id="datalist-class">
             <option value="1"></option>
             <option value="2"></option>
             <option value="3"></option>
@@ -50,13 +50,13 @@
             <option value="8"></option>
           </datalist>
         </div>
-        <div class="sub-element" id="enter-box"><input id="enter-button" type="button" value="Enter"
-            onclick="location.href = '../top/index.html';"></div>
+        <div class="sub-element" id="form-submit"><input id="form-button-submit" type="submit" value="Enter"
+            onclick="//location.href = '../top/index.html';"></div>
       </form>
     </div>
     <div class="main-container">
-      <p id="small-description">所持金<span
-          style="font-size: 3rem;padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p>
+      <p id="description-small">所持金<span
+          style="font-size: 3rem; padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p>
     </div>
   </div>
   <script src="script.js"></script>

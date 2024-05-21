@@ -55,12 +55,12 @@ input[type="radio"] {
   display: none;
 }
 
-#student-detail {
+#form-student-detail {
   display: flex;
   flex-direction: row;
 }
 
-.small-label {
+.form-label-student-detail {
   padding: 1rem;
   font-size: 3rem;
   line-height: 4rem;
@@ -68,7 +68,7 @@ input[type="radio"] {
   text-align: center;
 }
 
-.small-box {
+.form-input-student-detail {
   border: 0.3vw #ddd solid;
   border-radius: 2vw;
   background-color: #fafafa;
@@ -76,7 +76,7 @@ input[type="radio"] {
   text-align: center;
 }
 
-#enter-button {
+#form-button-submit {
   height: 8rem;
   line-height: 8rem;
   width: 100%;
@@ -87,7 +87,7 @@ input[type="radio"] {
   background-color: #ade1f6;
 }
 
-#small-description {
+#description-small {
   font-size: 2.5rem;
   line-height: 6rem;
   text-align: center;
