@@ -11,49 +11,49 @@
 <body>
   <div id="body">
     <h1 class="header">Register</h1>
-    <div class="main-container">
-      <form action="">
-        <div class="sub-container" id="form-nickname">
-          <label for="form-input-nickname" id="form-label-nickname">Nickname</label>
-          <input id="form-input-nickname" type="text" required>
-        </div>
-        <div class="sub-element" id="form-status">
-          <label for="choice-status-student" class="choice-status-radio">
-            <input type="radio" name="form-radio-status" id="choice-status-student" value="student" checked required>
-            Student
-          </label>
-          <label for="choice-status-general" class="choice-status-radio">
-            <input type="radio" name="form-radio-status" id="choice-status-general" value="general" required>
-            General
-          </label>
-        </div>
-        <div class="sub-element" id="form-student-detail">
-          <label for="form-input-grade" id="form-label-grade" class="form-label-student-detail">Grade</label>
-          <input id="form-input-grade" type="text" list="datalist-grade" inputmode="numeric" pattern="[1-3]"
-            class="form-input-student-detail" required>
-          <datalist id="datalist-grade">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-          </datalist>
-          <label for="form-input-class" id="form-label-class" class="form-label-student-detail">Class</label>
-          <input id="form-input-class" type="text" list="datalist-class" inputmode="numeric" pattern="[1-8]"
-            class="form-input-student-detail" required>
-          <datalist id="datalist-class">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-          </datalist>
-        </div>
-        <div class="sub-element" id="form-submit"><input id="form-button-submit" type="submit" value="Enter"
-            onclick="//location.href = '../top/index.html';"></div>
+    <form class="main-container" action="../top/index.html" method="post">
+
+      <div class="sub-container" id="form-nickname">
+        <label for="form-input-nickname" id="form-label-nickname">Nickname</label>
+        <input id="form-input-nickname" name="nickname" type="text" required>
+      </div>
+      <div class="sub-element" id="form-status">
+        <label for="choice-status-student" class="choice-status-radio">
+          <input type="radio" name="form-radio-status" id="choice-status-student" value="student" checked required>
+          Student
+        </label>
+        <label for="choice-status-general" class="choice-status-radio">
+          <input type="radio" name="form-radio-status" id="choice-status-general" value="general" required>
+          General
+        </label>
+      </div>
+      <div class="sub-element" id="form-student-detail">
+        <label for="form-input-grade" id="form-label-grade" class="form-label-student-detail">Grade</label>
+        <input id="form-input-grade" name="student-grade" type="text" list="datalist-grade" inputmode="numeric" pattern="[1-3]"
+          class="form-input-student-detail" required>
+        <datalist id="datalist-grade">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+        </datalist>
+        <label for="form-input-class" id="form-label-class" class="form-label-student-detail">Class</label>
+        <input id="form-input-class"  name="student-class" type="text" list="datalist-class" inputmode="numeric" pattern="[1-8]"
+          class="form-input-student-detail" required>
+        <datalist id="datalist-class">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+        </datalist>
+      </div>
+      <div class="sub-element" id="form-submit"><input id="form-button-submit" type="submit" value="Enter"
+          onclick="//location.href = '../top/index.html';"></div>
+
       </form>
-    </div>
     <div class="main-container">
       <p id="description-small">所持金<span
           style="font-size: 3rem; padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p>
