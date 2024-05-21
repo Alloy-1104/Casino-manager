@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --active-color: #ade1f6;
+}
+
+
+input:focus {
+  outline-offset: -0.4vw;
+  outline: 0.5vw var(--active-color) solid;
+}
+
+input::-webkit-calendar-picker-indicator{
+  position: absolute;
+  right: -200vw;
+}
+
+.header {
+  width: 80vw;
+  margin: 5vw auto;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  width: 80vw;
+  margin: 0 auto 10vw auto;
+  border: 0.3vw #ddd solid;
+  border-radius: 2vw;
+  background-color: #eee;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2vw 0;
+}
+.sub-container:first-of-type {
+  margin-top: 0;
+}
+.sub-container:last-of-type {
+  margin-bottom: 0;
+}
+
+.sub-element {
+  margin: 2vw 0;
+}
+.sub-element:first-of-type {
+  margin-top: 0;
+}
+.sub-element:last-of-type {
+  margin-bottom: 0;
+}
+
+input[type="text"] {
+  font-size: 3rem;
+  border: 0.3vw #ddd solid;
+  border-radius: 2vw;
+  background-color: #fafafa;
+}

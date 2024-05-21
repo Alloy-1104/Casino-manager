@@ -1,90 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic');
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Roboto Condensed', sans-serif;
-  box-sizing: border-box;
-  user-select: none;
-}
-
-:root {
-  --active-color: #ade1f6;
-}
-
-
-input:focus {
-  outline-offset: -0.4vw;
-  outline: 0.5vw var(--active-color) solid;
-}
-
-input::-webkit-calendar-picker-indicator{
-  position: absolute;
-  right: -200vw;
-  
+body {
+  padding: 0 auto;
 }
 
 #body {
-  position: relative;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  margin: 0 auto;
 }
 
-
-.header {
-  width: 80vw;
-  margin: 5vw auto;
-  text-align: center;
-  font-size: 6rem;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  padding: 5vw;
-  
-  width: 80vw;
-  margin: 0 auto 10vw auto;
-  border: 0.3vw #ddd solid;
-  border-radius: 2vw;
-  background-color: #eee;
-}
-
-#nickname-label {
+#form-label-nickname {
   font-size: 3rem;
   line-height: 3rem;
 }
 
-#nickname-box {
+#form-input-nickname {
   font-size: 3rem;
   line-height: 3rem;
   padding: 1rem;
   border: 0.3vw #ddd solid;
   border-radius: 2vw;
-  margin: 2vw 0;
   background-color: #fafafa;
 }
 
 
-#status-container {
+#form-status {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 2vw 0;
   border: 0.3vw #ddd solid;
   border-radius: 2vw;
   overflow: hidden;
 }
 
-#status-container:focus {
+#form-status:focus {
   outline-offset: -0.3vw;
   outline: 0.6vw var(--active-color) solid;
 }
 
-
-.status-radio {
+.choice-status-radio {
   font-size: 3rem;
   padding: 1rem;
   width: 50%;
@@ -92,36 +43,32 @@ input::-webkit-calendar-picker-indicator{
   transition: 0.1s;
 }
 
-.status-radio:has(input:checked) {
+.choice-status-radio:has(input:checked) {
   background-color: var(--active-color);
 }
 
-.status-radio:has(input:not(checked)) {
+.choice-status-radio:has(input:not(checked)) {
   background-color: #fafafa;
 }
-
 
 input[type="radio"] {
   display: none;
 }
 
 #student-detail {
-  margin: 2vw 0;
   display: flex;
   flex-direction: row;
 }
 
 .small-label {
+  padding: 1rem;
   font-size: 3rem;
-  line-height: 6rem;
+  line-height: 4rem;
   width: 25%;
   text-align: center;
 }
 
 .small-box {
-  font-size: 3rem;
-  line-height: 1rem;
-  padding: 1rem;
   border: 0.3vw #ddd solid;
   border-radius: 2vw;
   background-color: #fafafa;
@@ -129,19 +76,15 @@ input[type="radio"] {
   text-align: center;
 }
 
-#enter-box {
-  margin-top: 2vw;
-}
-
 #enter-button {
-  text-align: center;
-  font-size: 4rem;
+  height: 8rem;
   line-height: 8rem;
   width: 100%;
-  height: 8rem;
-  background-color: #ade1f6;
-  border-radius: 2vw;
   border: 0.3vw #ddd solid;
+  border-radius: 2vw;
+  text-align: center;
+  font-size: 4rem;
+  background-color: #ade1f6;
 }
 
 #small-description {

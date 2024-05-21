@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=0.4, user-scalable=no">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../common/style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Register - Casino manager</title>
 </head>
 
@@ -11,44 +12,52 @@
   <div id="body">
     <h1 class="header">Register</h1>
     <div class="main-container">
-      <label for="nickname-box" id="nickname-label">Nickname</label>
-      <input id="nickname-box" type="text" required>
-
-      <div id="status-container">
-        <label for="student-check" class="status-radio">
-          <input type="radio" name="student-or-general" id="student-check" value="student" checked required>
-          Student
-        </label>
-
-        <label for="general-check" class="status-radio">
-          <input type="radio" name="student-or-general" id="general-check" value="general" required>
-          General
-        </label>
-      </div>
-      <div id="student-detail">
-        <label for="grade-box" id="grade-label" class="small-label">Grade</label>
-        <input id="grade-box" type="text" list="grades" inputmode="numeric" pattern="[1-3]" class="small-box" required>
-        <datalist id="grades">
-          <option value="1"></option>  
-          <option value="2"></option>
-          <option value="3"></option>
-        </datalist>
-        <label for="class-box" id="class-label" class="small-label">Class</label>
-        <input id="class-box" type="text" list="classes" inputmode="numeric" pattern="[1-8]" class="small-box" required>
-        <datalist id="classes">
-          <option value="1"></option>  
-          <option value="2"></option>
-          <option value="3"></option>
-          <option value="4"></option>
-          <option value="5"></option>
-          <option value="6"></option>
-          <option value="7"></option>
-          <option value="8"></option>
-        </datalist>
-      </div>
-      <div id="enter-box"><input id="enter-button" type="button" value="Enter" onclick="location.href = '../top/index.html';"></div>
+      <form action="">
+        <div class="sub-container" id="form-nickname">
+          <label for="form-input-nickname" id="form-label-nickname">Nickname</label>
+          <input id="form-input-nickname" type="text" required>
+        </div>
+        <div class="sub-element" id="form-status">
+          <label for="choice-status-student" class="choice-status-radio">
+            <input type="radio" name="form-radio-status" id="choice-status-student" value="student" checked required>
+            Student
+          </label>
+          <label for="choice-status-general" class="choice-status-radio">
+            <input type="radio" name="form-radio-status" id="choice-status-general" value="general" required>
+            General
+          </label>
+        </div>
+        <div class="sub-element" id="student-detail">
+          <label for="grade-box" id="grade-label" class="small-label">Grade</label>
+          <input id="grade-box" type="text" list="grades" inputmode="numeric" pattern="[1-3]" class="small-box"
+            required>
+          <datalist id="grades">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </datalist>
+          <label for="class-box" id="class-label" class="small-label">Class</label>
+          <input id="class-box" type="text" list="classes" inputmode="numeric" pattern="[1-8]" class="small-box"
+            required>
+          <datalist id="classes">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+          </datalist>
+        </div>
+        <div class="sub-element" id="enter-box"><input id="enter-button" type="button" value="Enter"
+            onclick="location.href = '../top/index.html';"></div>
+      </form>
     </div>
-    <div class="main-container"><p id="small-description">所持金<span style="font-size: 3rem;padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p></div>
+    <div class="main-container">
+      <p id="small-description">所持金<span
+          style="font-size: 3rem;padding:0 10px;">1000$</span>からスタート！<br>ゲームで利益を生み出そう！<br>利益に応じてランキング入り！</p>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
